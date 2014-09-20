@@ -5,7 +5,7 @@ plot1 <- function (NEI=plotreadRDS ('summarySCC_PM25.rds'),
   # Show two plots...
   par (mfrow=c (2, 1),
        oma=c (0, 0, 0, 0),
-       mar=c(2, 2, 0, 0))
+       mar=c(2, 4, 0, 0))
 
   # Treat the year as a factor for our purposes
   yearOf <- factor (NEI$year)
