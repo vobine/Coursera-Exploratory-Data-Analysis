@@ -16,7 +16,7 @@ plot6 <- function (NEI=plotreadRDS ('summarySCC_PM25.rds'),
   
   # Set up the basic plotting framework
   gp <- ggplot (data,
-                aes (factor (year), log10 (Emissions)), fill=fips)
+                aes (factor (year), log10 (Emissions)))
   
   print (gp +
            geom_boxplot () +
